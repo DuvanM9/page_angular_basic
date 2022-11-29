@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
+
+// Cundo se usan funciones globales
+declare function customInitFunction() :any;
 
 @Component({
   selector: 'app-page',
@@ -8,9 +12,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private settingServices: SettingsService) { }
 
   ngOnInit(): void {
+    customInitFunction();
   }
 
 }

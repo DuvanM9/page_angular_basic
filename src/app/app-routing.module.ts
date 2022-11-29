@@ -12,6 +12,7 @@ const routes: Routes = [
   // Aqui se espesifican las rutas definidas
   // path: /dahsboard PageRoutingModule
   // path: /auth AuthRoutingModule
+  {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   { path: '**', component: NoPageFoundComponent },
 ];
 
