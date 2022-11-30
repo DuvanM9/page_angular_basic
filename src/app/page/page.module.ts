@@ -12,6 +12,8 @@ import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { ComponentsModule } from '../components/components.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromiseComponent } from './promise/promise.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -21,7 +23,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     ProgressComponent,
     Grafic1Component,
     PageComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromiseComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,

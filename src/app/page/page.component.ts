@@ -14,8 +14,8 @@ export class PageComponent implements OnInit {
 
   constructor(private settingServices: SettingsService) { }
 
-  ngOnInit(): void {
-    customInitFunction();
+  async ngOnInit() {
+    await customInitFunction();
   }
 
 }
